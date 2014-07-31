@@ -1,6 +1,6 @@
 package Business::Tax::VAT;
 
-$VERSION = '1.00';
+$VERSION = '1.01';
 
 use strict;
 use warnings;
@@ -61,11 +61,11 @@ our %RATE = (
 	ee   => 18,
 	fi   => 22,
 	fr   => 19.6,
-	de   => 16,
+	de   => 19,
 	gr   => 17.5,
 	hu   => 25,
 	ie   => 21,
-	it   => 20,
+	it   => 22,
 	lv   => 18,
 	'lt' => 17.5,
 	lu   => 15,
@@ -77,7 +77,7 @@ our %RATE = (
 	si   => 20,
 	es   => 16,
 	se   => 25,
-	uk   => 17.5,
+	uk   => 20,
 );
 
 sub new {
@@ -186,11 +186,11 @@ This module uses the following rates and codes:
   ee, Estonia, 18%
   fi, Finland, 22%
   fr, France, 19.6%
-  de, Germany, 16%
+  de, Germany, 19%
   gr, Greece, 17.5%
   hu, Hungary, 25%
   ie, Ireland, 21%
-  it, Italy, 20%
+  it, Italy, 22%
   lv, Latvia, 18%
   lt, Lithuania, 17.5%
   lu, Luxembourg, 15%
@@ -202,7 +202,7 @@ This module uses the following rates and codes:
   si, Slovenia, 20%
   es, Spain, 16%
   se, Sweden, 25%
-  uk, United Kingdom, 17.5%
+  uk, United Kingdom, 20%
 
 If any of these rates become incorrect, or if you wish to use
 different rates due to the nature of the product (e.g. books are 0%

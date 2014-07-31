@@ -7,3 +7,4 @@ README
 t/pod-coverage.t
 t/pod.t
 t/vat.t
+META.json                                Module JSON meta-data (added by MakeMaker)
