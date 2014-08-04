@@ -1,6 +1,6 @@
 package Business::Tax::VAT;
 
-$VERSION = '1.02';
+$VERSION = '1.03';
 
 use strict;
 use warnings;
@@ -20,10 +20,10 @@ Business::Tax::VAT - perform European VAT calculations
   my $vat_charged       = $price->vat;      #  20
   my $net_price_to_me   = $price->net;      # 100
 
-  my $price = $vat->business_item(100 => 'uk');
-  my $price_to_customer = $price->full;     # 117.5
-  my $vat_charged       = $price->vat;      #  17.5
-  my $net_price_to_me   = $price->net;      # 100
+  my $price = $vat->business_item(102 => 'uk');
+  my $price_to_customer = $price->full;     # 102
+  my $vat_charged       = $price->vat;      #  17
+  my $net_price_to_me   = $price->net;      #  85
 
 =cut
 
@@ -211,6 +211,14 @@ VAT in the UK), then you can (locally) set the rate by assigning to
 
   local $Business::Tax::VAT::Price::RATE{uk} = 0 
     if ($product_type eq 'book' and $country eq 'uk');
+
+=head1 SEE ALSO
+
+=over
+
+=item * L<http://www.vatlive.com/> current and historic VAT rates resource
+
+=back
 
 =head1 AUTHOR
 
