@@ -12,7 +12,17 @@ meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Business-Tax-VAT
+provides:
+  Business::Tax::VAT:
+    file: lib/Business/Tax/VAT.pm
+    version: 1.05
+  Business::Tax::VAT::Price:
+    file: lib/Business/Tax/VAT.pm
+    version: 1.05
 requires:
   Test::More: 0.17
   perl: 5.008
-version: 1.04
+resources:
+  homepage: http://search.cpan.org/dist/Business-Tax-VAT/
+  repository: git://github.com/gitpan/Business-Tax-VAT.git
+version: 1.05

@@ -7,6 +7,8 @@ Makefile.PL
 README
 dist.ini
 lib/Business/Tax/VAT.pm
+t/changes.t
+t/kwalitee.t
 t/pod-coverage.t
 t/pod.t
 t/vat.t
