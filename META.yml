@@ -2,9 +2,15 @@
 abstract: 'perform European VAT calculations'
 author:
   - 'Tony Bowden <kasei@tmtm.com>'
-build_requires: {}
+build_requires:
+  File::Spec: 0
+  IO::Handle: 0
+  IPC::Open3: 0
+  Module::Build: 0.30
+  Test::More: 0.17
 configure_requires:
   ExtUtils::MakeMaker: 0
+  Module::Build: 0.30
 dynamic_config: 0
 generated_by: 'Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.142060'
 license: gpl
@@ -12,17 +18,10 @@ meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Business-Tax-VAT
-provides:
-  Business::Tax::VAT:
-    file: lib/Business/Tax/VAT.pm
-    version: 1.05
-  Business::Tax::VAT::Price:
-    file: lib/Business/Tax/VAT.pm
-    version: 1.05
 requires:
   Test::More: 0.17
   perl: 5.008
 resources:
   homepage: http://search.cpan.org/dist/Business-Tax-VAT/
-  repository: git://github.com/gitpan/Business-Tax-VAT.git
-version: 1.05
+  repository: https://github.com/jonasbn/Business-Tax-VAT.git
+version: 1.06

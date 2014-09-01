@@ -12,8 +12,12 @@ use ExtUtils::MakeMaker ;
 my %WriteMakefileArgs = (
   "ABSTRACT" => "perform European VAT calculations",
   "AUTHOR" => "Tony Bowden <kasei\@tmtm.com>",
+  "BUILD_REQUIRES" => {
+    "Module::Build" => "0.30"
+  },
   "CONFIGURE_REQUIRES" => {
-    "ExtUtils::MakeMaker" => 0
+    "ExtUtils::MakeMaker" => 0,
+    "Module::Build" => "0.30"
   },
   "DISTNAME" => "Business-Tax-VAT",
   "EXE_FILES" => [],
@@ -22,7 +26,13 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "Test::More" => "0.17"
   },
-  "VERSION" => "1.05",
+  "TEST_REQUIRES" => {
+    "File::Spec" => 0,
+    "IO::Handle" => 0,
+    "IPC::Open3" => 0,
+    "Test::More" => "0.17"
+  },
+  "VERSION" => "1.06",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -30,6 +40,10 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
+  "File::Spec" => 0,
+  "IO::Handle" => 0,
+  "IPC::Open3" => 0,
+  "Module::Build" => "0.30",
   "Test::More" => "0.17"
 );
 
