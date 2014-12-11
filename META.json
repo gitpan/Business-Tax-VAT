@@ -51,13 +51,16 @@
    },
    "release_status" : "stable",
    "resources" : {
-      "homepage" : "http://search.cpan.org/dist/Business-Tax-VAT/",
+      "bugtracker" : {
+         "web" : "https://github.com/jonasbn/Business-Tax-VAT/issues"
+      },
+      "homepage" : "https://metacpan.org/pod/Business::Tax::VAT",
       "repository" : {
          "type" : "git",
          "url" : "https://github.com/jonasbn/Business-Tax-VAT.git",
          "web" : "https://github.com/jonasbn/Business-Tax-VAT"
       }
    },
-   "version" : "1.06"
+   "version" : "1.07"
 }
 

@@ -19,7 +19,7 @@ my %module_build_args = (
     "Tony Bowden <kasei\@tmtm.com>"
   ],
   "dist_name" => "Business-Tax-VAT",
-  "dist_version" => "1.06",
+  "dist_version" => "1.07",
   "license" => "gpl",
   "module_name" => "Business::Tax::VAT",
   "recommends" => {},
